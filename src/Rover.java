@@ -26,10 +26,14 @@ public class Rover {
     private void forWard() {
         switch(heading){
             case "N":
-                y++;
+               if(y < 5) {
+                   y++;
+               }
                 break;
             case "E":
-                x++;
+                if(x < 5){
+                   x++;
+                }
                 break;
             case "S":
                 y--;
